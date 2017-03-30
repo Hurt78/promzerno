@@ -1,0 +1,300 @@
+/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    color: #0f477f;
+    size: 30px;
+}
+
+#logo {
+ margin-left: -180px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.nav, .nav ul {
+    /* Обнуляем отступы и убираем маркеры у списков */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    position: relative; /* Относительное позиционирование */
+}
+
+.nav a {
+    text-decoration: none; /* Убираем подчёркивание */
+    display: block; /* Блочные ссылки */
+}
+
+.nav > li > a {
+    padding: 10px 15px; /* Поля */
+    position: relative;
+    z-index: 3; /* Выводим поверх остальных элементов */
+}
+
+.nav ul {
+    position: absolute; /* Абсолютное позиционирование */
+    display: none; /* Прячем подменю */
+    width: 200px; /* Ширина подменю */
+    background: #99b1d5; /* Цвет фона */
+    box-shadow: 0 0 10px #f5f01c; /* Параметры тени */
+}
+
+.nav ul a {
+    padding: 5px 10px; /* Поля */
+}
+
+.nav ul a:hover {
+    background: #8ba1c6; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+}
+
+.nav li:hover ul {
+    display: block; /* Показываем подменю */
+}
+
+.nav > li:hover::before {
+    content: ''; /* Создаём пустой псевдоэлемент */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Размер совпадает с пунктом меню */
+    box-shadow: 0 8px 15px #f5f01c; /* Параметры тени */
+    position: absolute; /* Абсолютное позиционирование */
+}
+
+.nav > li:hover > a {
+    /*  background: #fff; Цвет фона после перехода на нижний список, если нужно */
+}
+
+.contacts {
+    color: #53380d;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+.topnav {
+    font-size: 14px;
+    background-color: #99b1d5;
+}
+
+.lead {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+.lead.p_about {
+    text-indent: 40px;
+}
+
+/* --------------------------------- Таблица цен начало -------------------------------------- */
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, "Times New Roman";
+    font-size: 14px;
+    max-width: 70%;
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+    border-top: 7px solid #9baff1;
+    border-bottom: 7px solid #9baff1;
+}
+
+th {
+    font-size: 20px;
+    font-weight: normal;
+
+    border-right: 1px solid #9baff1;
+    border-left: 1px solid #9baff1;
+    color: #039;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    font-size: 25px;
+    background: #fff;
+    border-right: 1px solid #aabcfe;
+    border-left: 1px solid #aabcfe;
+    color: #121272;
+    padding: 8px;
+    text-align: left;
+}
+
+.cena {
+    background: #fff;
+    border-right: 1px solid #aabcfe;
+    border-left: 1px solid #aabcfe;
+    color: #121272;
+    padding: 8px;
+    text-align: center;
+}
+
+/*------------------- Таблица цен конец --------------------------------  */
+
+#cena2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/promzernoprodukt.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #53380d;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    table {
+        margin-left: 15%;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    .cena {
+        padding: 2px;
+        font-size: 14px;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+@media screen and (min-device-width: 767px) and (max-device-width: 1026px) {
+    table {
+        margin-left: 15%;
+    }
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #d7d7d3
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 300px;
+    border-top: 3px solid #91703a;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/promzernoprodukt_job.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+.wrap {
+    padding-left: 20px;
+}
+
+#contacts {
+
+    color: #000;
+}
