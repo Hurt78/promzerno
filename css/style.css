@@ -30,8 +30,6 @@ h2 {
  margin-top: 30px;
 }
 
-
-
 .navbar-default .navbar-nav > li > a {
     color: #fff;
 }
@@ -266,6 +264,7 @@ td {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
 }
 
 .section-heading {
@@ -304,4 +303,3 @@ p.copyright {
 
     color: #000;
 }
-
